@@ -12,18 +12,30 @@ body {
     padding: 0;
 }
 
-p, h1 {
+p {
+    color: hsl(224, 23%, 55%);
+    cursor: default;
     line-height: 1.5;
+}
+
+a {
+    cursor: pointer;
+}
+
+h1, strong {
+    color: hsl(223, 47%, 23%);
+    cursor: default;
 }
 
 /********************CLASS-TAGS********************/
 
 .main-box {
-    background-color: hsl(225, 100%, 98%);
+    background-color: white;
     border-radius: 20px;
-    margin: 10rem auto;
+    margin: 2.5rem auto;
     text-align: center;
-    width: 27%;
+    width: 22rem;
+
 }
 
 .musicGuy {
@@ -34,4 +46,75 @@ p, h1 {
 
 .header-box {
     padding: 0 3rem;
+}
+
+.offer-box {
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: left;
+}
+.offer-box img {
+    float: left;
+    margin: .8rem;
+    height: auto;
+    width: 15%;
+}
+
+.offer-box p {
+    font-size: 12px;
+}
+
+.offer-box a {
+    color: hsl(245, 75%, 52%);
+    font-size: 12px;
+    margin-left: 4rem;
+}
+
+.offer-box a:hover {
+    color: mediumpurple;
+}
+
+.payment-button {
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 8px;
+    box-shadow: 0 1px 30px hsl(224, 23%, 55%);
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 2rem 0 1rem;
+    padding: .7rem 0;
+    transition: .1s;
+    width: 100%;
+}
+
+.payment-button:hover {
+    transform: translateY(-.4px);
+    background-color: mediumpurple;
+}
+
+.cancel-button {
+    box-shadow: inset;
+    color: hsl(224, 23%, 55%);
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 0 1.5rem;
+    transition: .05s;
+}
+
+.cancel-button:hover {
+    color: black;
+}
+
+.attribution {
+    margin-bottom: 1rem;
+}
+
+/*****************RESPONSIVE-DESIGN****************/
+@media only screen and (max-width: 375px) {
+    body {
+        background-image: url("/images/pattern-background-mobile.svg");
+    }
 }
