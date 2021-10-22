@@ -1,0 +1,37 @@
+/********************SELECTOR-TAGS********************/
+*{
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    margin: 0;
+    padding: 0;
+}
+
+p, h1 {
+    line-height: 1.5;
+}
+
+/********************CLASS-TAGS********************/
+
+.main-box {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    margin: 10rem auto;
+    text-align: center;
+    width: 27%;
+}
+
+.musicGuy {
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    width: 100%;
+}
+
+.header-box {
+    padding: 0 3rem;
+}
